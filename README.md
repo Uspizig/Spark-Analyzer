@@ -5,15 +5,12 @@
 </p>
 
 This is a modification of Spark Analyser to my personal needs. Please check the oroginal Product here [now](https://www.crowdsupply.com/elektrothing/spark-analyzer).
-**Just received your Spark Analyzer? Check out our [quickstart guide](https://www.elektrothing.com/spark-analyzer-quickstart)!**
+
 
 The **Spark Analyzer** excels in power management. It is a versatile ESP32-powered device tailored for enhancing project development and debugging processes. It is fully compatible with USB-C Power Delivery (PD) and also supports the Programmable Power Supply (PPS) feature, allowing for precise control and management of power. Its compact design facilitates easy inline integration with existing setups, providing essential insights and control over power delivery.
 
 Equipped with WiFi and BLE, the Spark Analyzer offers wireless connectivity, enabling developers to remotely monitor and adjust voltage levels, log data, and analyze power consumption through a user-friendly interface. This design prioritizes convenience and efficiency, removing the need for physical buttons and supporting distance operation.
 
-Fully funded on Crowdsupply [now](https://www.crowdsupply.com/elektrothing/spark-analyzer).
-
-[![Spark Analyzer](https://img.youtube.com/vi/IWUR4Ur0Dy4/0.jpg)](https://www.youtube.com/watch?v=IWUR4Ur0Dy4)
 
 ## Features:
 
@@ -30,6 +27,16 @@ Fully funded on Crowdsupply [now](https://www.crowdsupply.com/elektrothing/spark
 6. **Compact Design**: Designed for convenience, the Spark Analyzer's compact and sleek form factor allows for seamless integration into existing setups. Its compatibility with USB PD power sources and inline integration capability minimizes the need for additional equipment or extensive redesign, making it a versatile and user-friendly addition to any development environment.
 
 5. **Safety**: Safety is crucial when working with electricity and is at the heart of Spark Analyzer. An integrated output FET allows for software programmable current limit that switches off the power in high-current scenarios.
+
+6. **Data Storage**: Store your Voltage Curves on SD Card and play back voltage ramps
+
+7. **Display**: Monitor live the current status of the Voltage Source
+
+8. **RTC**: Operate the Device in remote areas without Wifi in Standalone mode and still have a proper Time Monitoring
+
+9. **Air Quality**: Measure the Air Qulity with the BME680: Temperature, Humidity, Pressure and eCO² to take actions based on Enviromental Data
+
+10. **Gyro, ACC**: Identify Movement of the Device and take actions.
 
 ## Specifications
 
@@ -58,11 +65,13 @@ Fully funded on Crowdsupply [now](https://www.crowdsupply.com/elektrothing/spark
   - Programmable LED/Debug
 - **Buttons**
   - Reset
-  - Programmable Button/Debug
+  - Programmable 2Buttons/Debug
+  - Jog Dial
 
 #### Programming
-- **Integrated JTAG Controller**: For programming.
-- **USB-C**: Built-in USB JTAG programmer (ESP32-C3), compatible with Arduino. Select ESP32-C3 Dev Board.
+- **RX/TX Pins**: For programming.
+- **Micro SD Card**: For recall configuration files.
+- **USB-C**: Built-in USB JTAG programmer (ESP32-S3), compatible with Arduino. Select ESP32-S3 Dev Board.
 
 #### Output
 - **Current Output**: [CC6904SO-10A](https://datasheet.lcsc.com/lcsc/2304140030_Cross-chip-CC6904SO-10A_C469389.pdf).
@@ -120,44 +129,6 @@ Even at its maximum voltage output of 20V with a 1.5A load, Spark Analyzer conti
 <img src="./images/20V_1.5A.jpg" width="800" height="450"/>
 </p>
 
-### Thermal Performance
-Safety and efficiency are paramount. We took a thermal image of the board under these testing conditions to ensure that all components remained within safe temperature limits. The results were impressive: the entire board stayed cool, with the warmest component being the ESP32 microcontroller, which only reached around 40°C.
-
-<p align="center">
-<img src="./images/Thermal.jpg" width="600" height="800"/>
-</p>
-
-These tests underscore Spark Analyzer's commitment to delivering a product that is not only feature-rich but also reliable, safe, and efficient. With Spark Analyzer, you're investing in a device that's been tried and tested to ensure optimal performance under all conditions.
-
-
-## Package Contents:
-
-- 1x Spark Analyzer
-- Additional components (Specify as per your package)
-
-## Manufacturing & Logistics:
-
-Our designs have undergone rigorous testing and verification. We've already produced a pilot batch, and our manufacturing partners are geared up for full-scale production. All Spark Analyzer units will be shipped globally, ensuring timely delivery to our backers.
-
-## Comparison: Spark Analyzer vs PD Micro vs Lab Power Supply
-
-|    | Spark Analyzer               | [PD Micro](https://www.mouser.co.uk/ProductDetail/Crowd-Supply/CS-PDMICRO-01?qs=TuK3vfAjtkXixx0TeJooNQ%3D%3D)               | [TinyPICO V3](https://www.conrad.com/en/p/joy-it-com-zy12pdn-converter-1-pc-s-2475888.html?WT.srch=1&vat=true&utm_source=google&utm_medium=organic&utm_campaign=shopping&srsltid=AfmBOooPUzUXbytdxZNQd-7snqUbn7jtgCwQktmcI8B5WYmZAfE5yNWl4q0#productDownloads)          | [Joy-IT COM ZY12PDN](https://shop.pimoroni.com/products/tinypico-v2?variant=39285089534035)   |
-|------------------------------|------------------------------|------------------------|----------------------|----------------------|
-| **Microcontroller**          | ESP32-C3                     | ATmega32U4             | ESP32-PICO-D4        | Not Applicable       |
-| **WiFi Connectivity**        | Available (802.11b/g/n)      | Not Available          | Available            | Not Available        |
-| **Bluetooth Connectivity**   | Available (BLE 4.2)          | Not Available          | Available            | Not Available        |
-| **Flash Memory**             | 4 MB                         | Not Specified          | 4 MB                 | Not Specified        |
-| **USB-C Power Delivery**     | Supported                    | Supported              | Not Supported        | Supported            |
-| **Output Control**           | Adjustable                   | Adjustable             | Not Specified        | Adjustable           |
-| **Wireless Control**         | Yes                          | No                     | Yes                  | No                   |
-| **Smartphone App Support**   | Yes                          | No                     | No                   | No                   |
-| **Power Analysis**           | Accurate                     | Basic                  | Not Specified        | Basic                |
-| **Design**                   | Compact and Sleek            | Compact                | Ultra-Small          | Compact              |
-| **Open Source Status**       | Yes                          | Yes                    | Yes                  | No                   |
-| **Programming Interface**    | USB + JTAG                   | USB                    | USB                  | Not Applicable       |
-| **Inline Integration**       | Yes                          | No                     | Not Applicable       | No                   |
-| Power Delivery Range         | 5-20 VDC Supported           | 5-20 VDC Supported     | Not Supported        | 5-20 VDC Supported   |
-| **Price (USD)**              | $49                          | $28                    | $22                  | $16                  |
 
 
 ## License
