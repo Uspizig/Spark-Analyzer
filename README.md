@@ -1,10 +1,11 @@
 # Spark Analyzer: The Programmable USB-C Power Delivery Analyzer & Power Supply
 
+
 <p align="center">
-<img src="./images/SparkAnalyzer.jpg" width="600" height="444"/>
+<img src="./images/TopDown.jpg" width="600" height="400"/>
 </p>
 
-This is a modification of Spark Analyser to my personal needs. Please check the oroginal Product here [now](https://www.crowdsupply.com/elektrothing/spark-analyzer).
+This is a modification of Spark Analyser to my personal needs. Please check the original Product here [now](https://www.crowdsupply.com/elektrothing/spark-analyzer).
 
 
 The **Spark Analyzer** excels in power management. It is a versatile ESP32-powered device tailored for enhancing project development and debugging processes. It is fully compatible with USB-C Power Delivery (PD) and also supports the Programmable Power Supply (PPS) feature, allowing for precise control and management of power. Its compact design facilitates easy inline integration with existing setups, providing essential insights and control over power delivery.
@@ -63,11 +64,24 @@ Equipped with WiFi and BLE, the Spark Analyzer offers wireless connectivity, ena
   - Power On
   - Output Enable
   - Programmable LED/Debug
+  - 2 x WS2812-4020 RGB LED
+- **Display**
+  - GCA9a01 240x240 round Display
+  - Backlight can be operated seperatly
 - **Buttons**
   - Reset
   - Programmable 2Buttons/Debug
   - Jog Dial
+- **Sensors**
+  - LSM6 Gyro
+  - RV3028 RTC
+  - 4 GPIOs(3V3 logic) for operating outputs or read out Tacho Signals of FANs
+  - BME280 (optional)
+  - BME680 (optional)
+- **Audio Amplifier**
+  - MAX983657 AMP for Loudspeaker
 
+  
 #### Programming
 - **RX/TX Pins**: For programming.
 - **Micro SD Card**: For recall configuration files.
@@ -78,8 +92,13 @@ Equipped with WiFi and BLE, the Spark Analyzer offers wireless connectivity, ena
 - **Current Sensor**: Hall Effect Current Sensor.
 - **Output Enable**: [DMP3017SFG-7 FET](https://www.diodes.com/assets/Datasheets/products_inactive_data/DMP3017SFG.pdf).
 
+
 <p align="center">
-<img src="./images/TopDown.jpg" width="600" height="400"/>
+<img src="./images/TOP.jpg" width="600" height="444"/>
+</p>
+
+<p align="center">
+<img src="./images/BOTTOM.jpg" width="600" height="444"/>
 </p>
 
 
