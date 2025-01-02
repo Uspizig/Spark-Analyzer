@@ -1,7 +1,7 @@
 # Spark Analyzer: The Programmable USB-C Power Delivery Analyzer & Power Supply
 
 <p align="center">
-<img src="./images/SparkAnalyzer.jpg" width="800" height="444"/>
+<img src="./images/SparkAnalyzer.jpg" width="600" height="444"/>
 </p>
 
 This is a modification of Spark Analyser to my personal needs. Please check the oroginal Product here [now](https://www.crowdsupply.com/elektrothing/spark-analyzer).
