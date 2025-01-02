@@ -4,7 +4,7 @@
 <img src="./images/SparkAnalyzer.jpg" width="800" height="444"/>
 </p>
 
-
+This is a modification of Spark Analyser to my personal needs. Please check the oroginal Product here [now](https://www.crowdsupply.com/elektrothing/spark-analyzer).
 **Just received your Spark Analyzer? Check out our [quickstart guide](https://www.elektrothing.com/spark-analyzer-quickstart)!**
 
 The **Spark Analyzer** excels in power management. It is a versatile ESP32-powered device tailored for enhancing project development and debugging processes. It is fully compatible with USB-C Power Delivery (PD) and also supports the Programmable Power Supply (PPS) feature, allowing for precise control and management of power. Its compact design facilitates easy inline integration with existing setups, providing essential insights and control over power delivery.
@@ -46,7 +46,7 @@ Fully funded on Crowdsupply [now](https://www.crowdsupply.com/elektrothing/spark
 - **Power Pins**: 1x 5 VDC and 1x GND.
 
 #### Microcontroller
-- **Model**: [ESP32-C3FH4](https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_en.pdf) with 40 MHz crystal.
+- **Model**: [ESP32-S3 Wroom](https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf) 
 - **Wi-Fi**: 802.11b/g/n.
 - **Bluetooth**: BLE 4.2.
 - **Flash Memory**: 4 MB.
