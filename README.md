@@ -35,7 +35,7 @@ Equipped with WiFi and BLE, the Spark Analyzer offers wireless connectivity, ena
 
 8. **RTC**: Operate the Device in remote areas without Wifi in Standalone mode and still have a proper Time Monitoring
 
-9. **Air Quality**: Measure the Air Qulity with the BME680: Temperature, Humidity, Pressure and eCO² to take actions based on Enviromental Data
+9. **Air Quality**: Measure the Air Qulity with the BME680, BME688 or BME690: Temperature, Humidity, Pressure and eCO² to take actions based on Enviromental Data
 
 10. **Gyro, ACC**: Identify Movement of the Device and take actions.
 
@@ -64,7 +64,7 @@ Equipped with WiFi and BLE, the Spark Analyzer offers wireless connectivity, ena
   - Power On
   - Output Enable
   - Programmable LED/Debug
-  - 2 x WS2812-4020 RGB LED
+  - 2 x WS2812-4020 RGB Edge LED
 - **Display**
   - GCA9a01 240x240 round Display
   - Backlight can be operated seperatly
@@ -74,10 +74,10 @@ Equipped with WiFi and BLE, the Spark Analyzer offers wireless connectivity, ena
   - Jog Dial
 - **Sensors**
   - LSM6 Gyro
-  - RV3028 RTC
+  - RV3028 RTC Ultra Low Power
   - 4 GPIOs(3V3 logic) for operating outputs or read out Tacho Signals of FANs
   - BME280 (optional)
-  - BME680 (optional)
+  - BME680 (optional) or - BME688 (optional) or - BME690 (optional)
 - **Audio Amplifier**
   - MAX983657 AMP for Loudspeaker
 
